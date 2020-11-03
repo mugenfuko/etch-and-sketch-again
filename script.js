@@ -9,7 +9,7 @@ input.value = '1-100';
 
 function setGridSize() {
     gridSize = input.value;
-    if (gridSize >= 0 && gridSize <= 100 && gridSize != NaN) {
+    if (gridSize > 0 && gridSize <= 100 && gridSize != NaN) {
         return createGrid(gridSize);
     }
 }
